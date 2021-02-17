@@ -1,3 +1,11 @@
 section.section(class="bg-light")
 	.container
 		h1 Home Page
+
+		.row.mt-5
+			- const imgURI = ["icon-resources.png", "icon-right-analyttics.png", "icon-right-crm.png", "icon-right-products.png", "icon-right-template.png", "icon-uses.png"];
+			each val, index in imgURI.length ? imgURI : ['There are no value']
+				.col.text-center
+					.img-thumbnail.p-4
+						img(src="./images/" + val alt="Icon Image")
+						strong.d-block.mt-3 #{index + 1}
