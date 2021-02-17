@@ -1,0 +1,43 @@
+- const navClass = ["navbar-expand-lg", "navbar-dark ", "bg-dark"]
+
+// Navbar
+nav.navbar(class=navClass)
+	.container
+		
+		a.navbar-brand(
+			href="index.html"
+			title="Brand"
+		)
+			img(class="me-3" src="./images/favicon.ico" alt="Icon")
+			| Pug JS
+		
+		button.navbar-toggler(
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			)
+			span.navbar-toggler-icon
+
+		.collapse(class="navbar-collapse")#navbarSupportedContent
+
+			ul.navbar-nav(class="ms-auto")
+				li.nav-item
+					a.nav-link(href="index.html") Home
+
+				li.nav-item
+					a.nav-link(href="about.html") About
+				
+				li.nav-item
+					a.nav-link(href="contact.html") Contact
+				
+				
+				li.nav-item
+					a.nav-link(
+						class="disabled"
+						href="#"
+						tabindex="-1"
+						aria-disabled="true"
+					) Disabled

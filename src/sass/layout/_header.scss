@@ -1,0 +1,11 @@
+header {
+	.navbar {
+		height: 60px;
+	}
+
+	.navbar-brand {
+		> img {
+			max-width: 35px;
+		}
+	}
+}

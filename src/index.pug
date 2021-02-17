@@ -1,0 +1,14 @@
+extends layout.pug
+
+block head
+	- const title = 'Home'	
+
+block page
+	// Header
+	include ./partials/header
+
+	// Page Content
+	include ./pages/home
+
+	// Footer
+	include ./partials/footer

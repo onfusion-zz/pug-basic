@@ -1,0 +1,16 @@
+# macOS Files
+.DS_Store
+
+# ignore all logs
+logs/
+**/logs
+*.log
+*.sass-cache
+*.sass-cache/*
+# *sass
+# *sass/*
+*.rar
+*.zip
+node_modules
+node_modules/*
+package-lock.json

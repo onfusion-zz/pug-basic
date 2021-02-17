@@ -1,0 +1,12 @@
+body {
+}
+
+.section {
+	height: calc(100vh - (60px + 75px));
+	min-height: 500px;
+	padding: 75px 0;
+}
+
+.bg-light {
+	background-color: darken($light, 10) !important;
+}
